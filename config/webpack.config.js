@@ -119,7 +119,6 @@ module.exports = function (webpackEnv) {
       }
       loaders.push(loader);
     }
-    console.log(loaders);
     return loaders;
   };
 
@@ -356,6 +355,11 @@ module.exports = function (webpackEnv) {
                       },
                     },
                   ],
+                  ["import", {
+                    "libraryName": "antd",
+                    "style": true // `style: true` 会加载 less 文件
+                  }
+                  ]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
