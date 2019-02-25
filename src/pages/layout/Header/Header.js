@@ -25,11 +25,11 @@ export default class CommonHeader extends React.Component {
     }
 
     getWeatherAPIData = () => {
-        axios.jsonp({
-            url: ''
-        }).then((res) => {
-            console.log(res);
-        });
+        // axios.jsonp({
+        //     url: ''
+        // }).then((res) => {
+        //     console.log(res);
+        // });
     }
 
     render() {
