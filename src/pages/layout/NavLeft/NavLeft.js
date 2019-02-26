@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import { NavLink } from 'react-router-dom';
 import menuList from '../../../resource/menuConfig';
 import './NavLeft.less';
 
@@ -26,7 +27,7 @@ export default class NavLeft extends React.Component {
             }
             return (<Menu.Item key={item.key}>
                 <Icon type="pie-chart" />
-                <span>{item.title}</span>
+                <span><NavLink style={{ color: '#fff' }} to={'/admin' + item.key}>{item.title}</NavLink></span>
             </Menu.Item>)
         });
     }

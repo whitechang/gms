@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Row, Col } from 'antd';
 import Util from '../../../utils/utils';
-import axios from '../../../axios';
+// import axios from '../../../axios';
 import './Header.less';
 
 const { Header } = Layout;
@@ -39,7 +39,7 @@ export default class CommonHeader extends React.Component {
                     <Row className="header-top">
                         <Col span={24}>
                             <span>欢迎,{this.state.userName}</span>
-                            <a href="#">退出</a>
+                            <a href="localhost:8000">退出</a>
                         </Col>
                     </Row>
                     <Row className="breadcrumb">
