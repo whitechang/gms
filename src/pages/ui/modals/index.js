@@ -18,7 +18,7 @@ class Modals extends Component {
     }
 
     render() {
-        const { showModal1 } = this.state;
+        const { showModal1, showModal2, showModal3, showModal4 } = this.state;
         return (
             <div>
                 <Card title="基础模态框" className="card-wrap">
@@ -35,6 +35,18 @@ class Modals extends Component {
                     onCancel={() => {
                         this.setState({
                             showModal1: false
+                        })
+                    }}
+                >
+                    <p>欢迎使用通用管理系统</p>
+                </Modal>
+                <Modal
+                    title="React"
+                    visible={showModal2}
+                    okText="下一步"
+                    onCancel={() => {
+                        this.setState({
+                            showModal2: false
                         })
                     }}
                 >
