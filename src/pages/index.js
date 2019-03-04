@@ -5,7 +5,8 @@ import { Layout } from 'antd';
 import CommonHeader from './layout/Header/Header';
 import CommonFooter from './layout/Footer/Footer';
 import NavLeft from './layout/NavLeft/NavLeft';
-import './index.less'
+import './index.less';
+import '../styles/common.less';
 
 const { Content } = Layout;
 

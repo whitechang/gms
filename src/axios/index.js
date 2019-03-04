@@ -22,7 +22,7 @@ export default class Axios {
             let baseApi = "https://www.easy-mock.com/mock/5c7b99d5d764b271d20acaeb/gmsapi";
             axios({
                 url: options.url,
-                method: 'get',
+                method: options.method || 'get',
                 baseURL: baseApi,
                 timeout: 5000,
                 params: (options.data && options.data.param) || '',
