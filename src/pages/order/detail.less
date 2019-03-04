@@ -1,0 +1,43 @@
+.detail-items{
+    margin-left:90px;
+    padding:25px 50px 25px 0;
+    border-bottom:1px solid #666666;
+    &:last-child{
+      border-bottom:none;
+    }
+    .item-title{
+      margin:20px 0;
+      font-size:16px;
+      color:black;
+    }
+    .detail-form{
+        list-style-type: none;
+      li{
+        .clearfix{
+            &::after{
+                content:'';
+                clear: both;
+                display: block;
+                visibility: hidden;
+            }
+        }
+        margin:20px 0;
+        line-height:20px;
+        font-size:15px;
+        color:gray;
+      }
+    }
+    .detail-form-left{
+      float:left;
+      width:164px;
+      text-align:right;
+      color:black;
+    }
+    .detail-form-content{
+      padding-left:194px;
+    }
+}
+.order-map{
+  height: 450px;
+  margin: 25px -31px 0;
+}
