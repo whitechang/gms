@@ -71,7 +71,7 @@ class LoginForm extends Component {
                                     rules: []
                                 })(<Checkbox>记住密码</Checkbox>)
                             }
-                            <a style={{ float: 'right' }}>忘记密码</a>
+                            <a href="localhost:3000" style={{ float: 'right' }}>忘记密码</a>
                         </FormItem>
                         <FormItem>
                             <Button type="primary" onClick={this.handleSubmit}>登陆</Button>

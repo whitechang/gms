@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, Form, Input, message, Icon, Checkbox, Radio, Select, Switch, TimePicker, Upload, InputNumber, DatePicker } from 'antd';
+import { Card, Button, Form, Input, Checkbox, Radio, Select, Switch, TimePicker, Upload, InputNumber, DatePicker } from 'antd';
 import moment from 'moment';
 
 const FormItem = Form.Item;
@@ -161,7 +161,7 @@ class RegisterForm extends Component {
                         <FormItem {...offsetLayout}>
                             {
                                 getFieldDecorator('text', {
-                                })(<Checkbox>我已阅读过<a>协议</a></Checkbox>)
+                                })(<Checkbox>我已阅读过<a href="localhost:3000">协议</a></Checkbox>)
                             }
                         </FormItem>
                         <FormItem {...offsetLayout}>
