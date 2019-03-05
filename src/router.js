@@ -19,6 +19,10 @@ import City from './pages/city';
 import Order from './pages/order';
 import Common from './pages/common';
 import OrderDetail from './pages/order/detail';
+import Bar from './pages/echarts/bar';
+import Pie from './pages/echarts/pie';
+import Line from './pages/echarts/line';
+import RichText from './pages/rich';
 
 export default class IRouter extends React.Component {
     render() {
@@ -43,6 +47,10 @@ export default class IRouter extends React.Component {
                                 <Route path="/admin/table/high" component={HighTable} />
                                 <Route path="/admin/city" component={City} />
                                 <Route path="/admin/order" component={Order} />
+                                <Route path="/admin/charts/bar" component={Bar} />
+                                <Route path="/admin/charts/pie" component={Pie} />
+                                <Route path="/admin/charts/line" component={Line} />
+                                <Route path="/admin/rich" component={RichText} />
                                 <Route component={NoMatch} />
                             </Switch>
                         </Admin>
